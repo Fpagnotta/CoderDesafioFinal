@@ -17,10 +17,14 @@ from django.contrib import admin
 from django.urls import path
 
 from tu_vehiculo.views import index
+from vehiculos.views import autos,motos,camiones
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',index,name = "index"),
+    path('',index,name = "index"),
+    path('autos/',autos,name = "Autos"),
+    path('motos/',motos,name ="Motos"),
+    path("camiones/",camiones,name ="Camiones"),
 ]
