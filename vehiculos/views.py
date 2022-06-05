@@ -6,23 +6,23 @@ from vehiculos.models import Autos,Motos,Camiones
 
 
 def autos(request):
-    auto = Autos.objects.all()
-    context={'auto':auto}
+    autos = Autos.objects.all()
+    context={'autos':autos}
     return render(request,'autos.html',context=context)
 
 
 
 
 def motos(request):
-    moto = Motos.objects.all()                          
-    context={'moto':moto}
+    motos = Motos.objects.all()                          
+    context={'motos':motos}
     return render(request,'motos.html',context=context)
 
 
 
 
 def camiones(request):
-    camion = Camiones.objects.all()        
-    context={'camion':camion}
+    camiones = Camiones.objects.all()        
+    context={'camiones':camiones}
     return render(request,'camionetas.html',context=context)
  
