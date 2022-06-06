@@ -25,4 +25,8 @@ def camiones(request):
     camiones = Camiones.objects.all()        
     context={'camiones':camiones}
     return render(request,'camionetas.html',context=context)
+
+def cargar_vehiculos(request):
+    context ={'cargar_vehiculo':cargar_vehiculos}
+    return render (request,'cargar_vehiculos.html',context)
  
